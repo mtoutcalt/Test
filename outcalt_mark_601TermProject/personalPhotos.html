@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Personal Photos</title>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery.ui.all.cs">
+		<link href="http://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="style/portfolio_template.css" media="screen">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+	</head>
+	
+	<body>
+		<div class="inner-body">
+
+		<div class="banner">
+			<a style="text-decoration: none;" href="home.html" id="bannerLink">
+ 				<h1 class="title">Mark's Portfolio</h1>	
+			</a>
+		</div>	
+
+		<nav id="nav_bar">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="favWebsites.html">Resources</a></li>
+				<li><a href="favHobbies.html">Hobbies</a></li>
+				<li><a href="form.html">Contact</a></li>
+				<li><a href="media.html">Media</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="drawings.html">Drawings</a></li>
+				<li><a href="techBlog.html">Tech Blog</a></li>
+				<li><a href="personalPhotos.html" class="current">Photos</a></li>	
+			</ul>
+		</nav>
+
+		<h1>Photos of Pets, Family, and Friends (but mostly pets)</h1>
+		<section>
+			<button id="showAll" class="myPhotoButn">Show All Images</button>
+			<button id="showPets" class="myPhotoButn">Show Pet Images</button>
+			<button id="showPeople" class="myPhotoButn">Show People Images</button>
+			<button id="showCat" class="myPhotoButn">Show Cat Images</button>
+			<button id="showDog" class="myPhotoButn">Show Dog Images</button>
+		</section>
+
+		<section id="jqueryImgs">
+			<img src="images/catInTrash.JPG" id="catInTrash" alt="catInTrash" title="Cat in the Trash" class="photo pet cat" />
+			<img src="images/catSink.jpg" id="catInSink" alt="catInSink" title="Cat in the Sink" class="photo pet cat" />
+			<img src="images/fancyCat.JPG" id="fancyCat" alt="fancyCat" title="Fancy Cat" class="photo pet cat"/>
+			<img src="images/gatsbyPup.jpg" id="gatsbyPup" alt="gatsbyPup" title="Puppy" class="photo pet dog" />
+			<img src="images/santaGatsby.JPG" id="santaGatsby" alt="santaGatsby" title="Dog in Santa Suit" class="photo pet dog" />
+			<img src="images/scuba.jpg" id="scuba" alt="scuba" title="Scuba Diving" class="photo person" />
+			<img src="images/skiingFriends.jpg" id="skiingFriends" alt="skiingFriends" title="Friends Skiing" class="photo person" />
+		</section>
+
+	</div>
+
+		<footer>
+			<ul class="footList">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+			<ul class="footList">
+				
+				<li><a href="media.html">Media</a></li>
+				<li><a href="form.html">Contact</a></li>
+			</ul>
+			<ul class="footList">
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="techBlog.html">Tech Blog</a></li>
+			</ul>
+			<ul class="footList">
+				<li><a href="favHobbies.html">Hobbies</a></li>
+				<li><a href="favWebsites.html">Resources</a></li>
+			</ul>
+			<ul class="footList">
+				<li><a href="drawings.html">Drawings</a></li>
+				<li><a href="personalPhotos.html">Personal Photos</a></li>
+			</ul>
+			<ul class="footList" id="social">
+				<li>Follow me on: </li>
+			</ul>
+			<ul class="footList">
+				<li class="soc-links" id="facebook"><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+				<li class="soc-links" id="twitter"><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
+			</ul>
+			<ul class="footList">
+				<li class="soc-links" id="linkedin"><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+				<li class="soc-links" id="google"><a href="https://plus.google.com/" target="_blank">Google+</a></li>
+			</ul>						
+ 			<p>Copyright &copy; 2015 -- Mark Outcalt -- All Rights Reserved</p>
+		</footer>
+		<script src="scripts/photoJquery.js"></script>
+	</body>
+</html>
+

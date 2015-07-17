@@ -1,0 +1,74 @@
+
+header img {
+	float: left;
+	padding: 0.625em;
+} 
+* {
+	color: black;
+}
+
+h1 {
+	border-bottom: 1px solid black;
+}
+
+.inner-body {
+	font-family: "Times New Roman", Times, serif;
+	margin: auto;
+	padding: 2em;
+	width: 100%;
+}
+
+p, li {
+	font-size: 1.2em;
+}
+
+a {
+	font-weight: bold;
+}
+
+.loc {
+	position: relative;
+	top: 4em;
+	padding-right: 2em;
+}
+
+.tech {
+	clear: left;
+}
+
+.fav-sites {
+	margin: 0.625em;
+	position: relative;
+	margin-top: 2em;
+}
+
+.hobbies {
+	margin: 0.625em;
+	position: relative;
+	margin-top: 2em;
+	padding-bottom: .8em;
+}
+
+.hobbies li {
+	font-weight: bolder;
+	font-size: 1.2em;
+}
+
+.quotes {
+	clear: left;
+	font-size: 1.2em;
+}
+
+q {
+	font-weight: bolder;
+}
+
+address {
+	display:none;
+}
+
+footer p {
+	font-size: 0.8em;
+	text-align: right;
+	font-weight: bold;
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Tech Blog</title>
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link href="http://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="style/portfolio_template.css" media="screen">
+	</head>
+	
+	<body>
+	<div class="inner-body">
+
+		<div class="banner">
+			<a style="text-decoration: none;" href="home.html" id="bannerLink">
+ 				<h1 class="title">Mark's Portfolio</h1>	
+			</a>
+		</div>		
+
+		<nav id="nav_bar">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="favWebsites.html">Resources</a></li>
+				<li><a href="favHobbies.html">Hobbies</a></li>
+				<li><a href="form.html">Contact</a></li>
+				<li><a href="media.html">Media</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="drawings.html">Drawings</a></li>
+				<li><a href="techBlog.html" class="current">Tech Blog</a></li>
+				<li><a href="personalPhotos.html">Photos</a></li>	
+			</ul>
+		</nav>
+
+		<header>
+			<h1>Tech Blog</h1>
+		</header>	
+
+		<aside id="articleList">
+		<section>	
+			<h3>New Articles</h3>
+			<ul>
+				<li><a href="#serverSideAbilities">Server-Side Abilities - 06-10-2015</a></li>
+				<li><a href="#javascriptEssential">Javascript is Essential - 06-03-2015</a></li>
+			</ul>
+		</section>
+		<section>	
+			<h3>Archive</h3>
+			<ul>
+				<li><a href="#standards">Open Standards - 05-27-2015</a></li>
+				<li><a href="#importWebDesign">Importance of Web Design - 05-20-2015</a></li>
+				<li><a href="#ImpactWeb">Impact of the World Wide Web - 05-13-2015</a></li>
+			</ul>
+		</section>
+		<section>	
+			<h3>Recommended Blogs</h3>
+			<ul>
+				<li><a href="http://blog.codinghorror.com/" target="_blank">Coding Horror</a></li>
+				<li><a href="http://blog.cleancoder.com/" target="_blank">Clean Coder</a></li>
+				<li><a href="http://www.paulgraham.com/articles.html" target="_blank">Paul Graham Essays</a></li>
+				<li><a href="http://simpleprogrammer.com/" target="_blank">Simple Programmer</a></li>
+			</ul>
+		</section>
+		<section>	
+			<h3> Recommended Links</h3>
+			<ul>
+				<li><a href="http://www.w3schools.com/" target="_blank">W3C Schools</a></li>
+				<li><a href="http://www.codecademy.com/" target="_blank">Codecademy</a></li>
+				<li><a href="https://www.codeschool.com/" target="_blank">Code School</a></li>
+				<li><a href="http://www.pluralsight.com/" target="_blank">Pluralsight</a></li>
+			</ul>
+		</section>		
+		</aside>
+		
+		<article class="techArticle">
+			<p class="date">06-10-2015</p>
+			<a name="serverSideAbilities"><h2>Server-Side Abilities</h2></a>
+<p>			
+My technical background is in server side technologies based in Java and that is what I do at my current job.  I'm nowhere near an expert in anything but I do have some experiences working on Web Applications and Web Services with Java based frameworks.  The biggest advantage to server-side is its data storage and processing.  If you have a web site that is mostly displaying content with some javascript/DOM interactivity than it's easy to ignore the server-side programming - but most web applications that do anything that requires data or processing need more power than what you can get on the client-side.  I imagine that when you go to a site like Netflix the codebase on the server-side is magnitudes larger than the client-side almost to the point where the client side is the layer of paint on the walls on the server-side house.  My intention isn't to imply that client-side is easy and it's getting more powerful all the time but the browser will never do the same processing that a dedicated server and database would do.  CMS tools built with server-side languages, like Wordpress built on PHP, can keep the complexity hidden and allow you to concentrate on adding value to the user instead of recreating server-side functionality that fits common use cases. 
+</p>
+<p>
+I have experiences with a Java framework called Spring and have made Model-View-Controller type applications.  I've mentioned MVC before but I want to note that the client-side is really the View component and the Model and Controller are server-side.  So imagine a user goes to a page of the app and it displays an HTML table of data that lists all the servers the company owns.  That HTML is being built dynamically.  As soon as the webpage is hit the HTTP GET request will trigger the Controller component to start its process flow.  Typically it will make a database call, in this case to get the data of the servers owned, then it will take that data and populate the Model objects.  Then the Controller will pass that Model to the View where it will then be generated into the HTML that is displayed.  This means that the data lives in the database and was not hard-coded into the HTML.  If new server data is added the only thing needed is to add that new data to the database and the user will see it in the HTML view without any client-side coding.  I also want to mention that MVC is a design and not exclusive to server-side --- javascript frameworks like Angular.js use something similar to separate the duties of each processing component.
+</p>
+<p>
+Client-side coding is not any less important than server-side coding.  They have different strengths and if a website does any processing it will most likely need backend scripting and a database.  This does add complexity and it does mean there are new skills to learn.  In terms of interactivity the more that can be done in the browser with javascript languages the better since it does save all that back and forth communicating with the server.  And security issues like SQL Injection now become an issue since a user could insert a query to your database and retrieve passwords or private data. 
+</p>
+<p>
+As a programmer I find doing both client and server programming exciting because they each require different ways of solving problems and thinking.  I also find that the visual nature of client-side can be rewarding because you can see what you're working on and get instant feedback.  I've often wallowed on a server-side problem and once it was solved it didn't yield anything that a user would notice. I also find it interesting that I've noticed that a lot of developers I work with stick to one and often hate doing the other.  From what I can tell from web trends as time goes on client and server programming will start to merge more and the boundary will start to become less clear.
+</p>
+		</article>
+
+		<article class="techArticle">
+			<p class="date">06-03-2015</p>
+			<a name="javascriptEssential"><h2>Javascript is Essential</h2></a>
+<p>			
+Javascript has been around since it was built-in to the Netscape browser when the web was still in its infancy.  It has nothing to do with the Java programming language but because Java was becoming so popular with applet programming it was a marketing strategy to make it sound similar.  One advantage of javascript is that it is a fully-functional but accessible language and because all you need is a text editor and a browser I think it's the perfect choice for learning how to program[1].  It's purpose originally was to allow interactivity with a webpage since HTML is a markup specification and CSS is a way to format that markup text.  Javascript adds interactivity by allowing the DOM to be manipulated and then later AJAX allowed HTTP requests/responses to be made within a page when before the entire page would need to be reloaded.  Recently Javascript API's have taken off with jQuery being one of the foremast and Angular giving it an MVC model.  MVC is something I see a lot in server-side languages which stands for Model-View-Controller and is a way to separate the design of a program[2].  Think of the model as the bucket where the data lives and the View is the rendered HTML/CSS that is displayed to the user.  The controller is the intermediate facilitator that accepts a request of data, grabs data from the Model, and then sends it to the view.
+</p>
+<p>
+An API like Node.js is an even bigger jump from traditional javascript because it allows a developer to make an app with a full stack that is all in Javascript.  This is in contrast to a stack like 'LAMP' (Linux, Apache, MySql, PHP) where the server-side PHP does the majority of the work and processing[3].  That separation means a developer has to know multiple languages and thus know how to maintain, fix, and secure these different languages.  By using javascript on the front-end and Node.js on the backend it can make writing and maintaining that app easier since the integration will speak the same language.
+</p>
+<p>
+I think others have made a lot of good points about the advantages/disadvantages of Javascript.  Security is definitely a concern, as it is for every language on the web, but since Javascript engines are built into the browser it makes it especially vulnerable.  I know others mentioned XSS (Cross-Site-Scripting) and I thought this video was helpful[4] - http://gizmodo.com/why-are-javascript-attacks-so-dangerous-1453269240
+</p>
+<p>
+Javascript is definitely an essential web language and because of its APIs, with what seems like a new one everyday, it has capabilities that nobody ever thought it would have years ago.  The version 6 of ECMAscript (the official name of Javascript) is being finalized and making the language even more powerful by adding things like classes which is a pillar of object-oriented programming [6]. These new capabilities seem to decrease the amount of server-side programming needed for web applications which can boost performance since it saves network transactions being transmitted back and forth.  In fact the Javascript engines are so powerful now that Node.js stemmed out of Chrome's V8 engine.  As a programmer with a lot of Java experience these engines appear similar to the Java Virtual Machine that allowed Java to be so portable and thus become very popular.  As overwhelming as it can be to see all these new API's, I'm definitely excited to see how Javascript develops and there's no doubt it's something every web developer should be familiar with.     
+</p>
+		</article>
+
+		<article class="techArticle">
+			<p class="date">05-27-2015</p>
+			<a name="standards"><h2>Open Standards</h2></a>
+<p>			
+When I think of open standards I think of standardized protocols and formats that allow technology to work and integrate.  The Web and the Internet are based on open standards like HTTP, HTML, TCP/IP.  The internet wouldn't work with only closed standards because then private networks wouldn't be able to communicate with eachother.  I did some searching and found this webpage which lists out principles of an open standard -- https://open-stand.org/about-us/principles/-- Here are those principles in my own words:
+</p>
+<p>
+Cooperation - standard organizations respect eachother and don't just work in their own self-interest
+</p>
+<p>
+Adherence to Principles - Standard decisions are made with all parties involvement and in a open and transparent way.  Reviews and documents are publicly disclosed and decisions are not made behind closed doors.  There also needs to be a consensus among groups and a diverse amount of opinions need to be taken into account.  The requirements for participation need to be accessible and expressed clearly as not to discourage more involvement.  There should be a diverse amount of parties so a single company or interest group does not dominate and take the standards into their own hands.
+</p>
+<p>
+Collective Empowerment - Allow groups to come to a consensus for the open standards and make decisions based on the technical merits and strengths rather than their own self interests.  The standards should promote interoperability, scale, and stability so it has flexiblity for its usage.  The standards should be general enough to be extended and built upon.
+</p>
+<p>
+Availability - The standards should be designed so they can be used in a general way across different situations and circumstances.  They should not be only workable when integrated with a company's proprietary technology.
+</p>
+<p>
+Voluntary Adoption - The standards are designed by groups and committees that are transparent and accepting of others to participate.  Users of the technology can voluntarily adopt the standard if they want to and company's can market products around it but there should not be collusion or companies should not create situations that forces users to use the standard in a way that only serves that company's self-interest.  The standards are designed to be used by everyone.  Company's can build proprietary products around those standards but the standards should not be taken hostage by a company in a way where only that company can use the standard to make profit.
+</p>
+<p>
+I also think the term open standards is ambiguous.  Or maybe more accurately there are different degrees of open standards.  Some standards are open meaning there is no royalties and other standards are open because nobody owns them. 
+</p>
+<p>
+In contrast closed standards are privately owned.  As others have mentioned the benefit is these standards can be created and rolled out quickly and companies can grab market share using them but they are inherently not desinged to follow the principles mentioned above.  There is a place for both open and closed standards but when is to be used on a massive scale like the Internet then open standards allow it to work because they are designed to be shared.
+</p>
+		</article>
+
+		<article class="techArticle">
+			<p class="date">05-20-2015</p>
+			<a name="importWebDesign"><h2>Importance of Web Design</h2></a>
+<p>			
+Web site design and development is not surprisingly more sophisticated than it was when the Web was new in the 90's.  Back then site's could get away with using HTML and some styling.  Lots of web pages used tables to format and align the content on the site. Interactivity was minimal.  Around this time just having a Web presence was a bonus and helped a business.  But now the Web is more mature and the expecations are higher.  Server-side technology is more sophisticated and client-side technology's capability is expanding rapidly.  Single-page apps can now mimic desktop-like, real-time interactivity [1].  Web design is it's own field and graphic artists have learned a lot since the 90's.  Users are more sophisticated and expect sites to look a certain way.  Research has come out saying that users often will spend less than 15 seconds before they decide to leave the site [2].   Sites that are hard to navigate or look ugly from a first impression are judged instantly and users will spend only seconds before they go to a different site.  A company or brand will be judged by their site and some businesses, like Amazon.com, thrive as a online only business.  
+</p>
+<p>
+Another change is that sites no longer are just for browsers viewed on a desktop.  Now with mobile and tablet devices sites need to be responsive to different form-factors which means different resolutions and use cases.  A site designed for a monitor will often not be as effective on a 5" phone screen.  Just this month Google announced that there are now more searches conducted on mobile devices than on desktop [3]. And that trend will continue.  Users on mobile devices are typically less patient when it comes to viewing websites so they want the content to be as easily accessible as possible.  This means that web designers now have a lot more factors they need to think about when making a site.  
+</p>
+<p>
+I think interactivity can be important but not essential to a website.  The key is that the design of the site should be appropriate for the usage of the site.  Form should follow function.  A site like the New York Times doesn't need to have interactive pages on it.  Users go there to read articles.  The site is really a translation of the physical newspaper.  But I have noticed that some articles will feature graphs that are interactive in such a way that it communicates information effectively.  For example an article about nationwide trends in something can have an interactive map of the country with a slider allowing you to change the year and see how those trends change.  Additionally, a site for a small business is usually more effective if it's kept clean and simple.  Attractive images and colors can help but you want the user to see the important details easily and not make the experience a navigation nightmare.  I also think design has become more standardized in a lot of ways, I know a lot of sites at my company use Twitter Bootstrap and you notice all of the same looks across these sites [4].  The reason for this is because there has been a lot of lessons learned over the years and so many sites out there have the same requirements.
+</p>
+<p>
+Web site design is no longer a thing that's "nice to have" for a company - it is essential.  I know I'm always a little shocked or annoyed when a restaurant I want to try doesn't have a site.  I can't help but make a negative judgment about that company if they don't have the resources to make a site.  As we discussed in our week 1 discussion, more and more of our everyday activites are conducted through websites.  And that means having well-built sites that are intuitive and easy to use is more crucial than ever.  As mobile usage continues to increase new lessons will be learned in that space in terms of good design [5].  I think there's still a transition of just taking a site designed for a desktop and moving the content around to fit around a phone.  That will change as sites will be designed for mobile devices first.
+</p>
+		</article>
+
+		<article class="techArticle">
+			<p class="date">05-13-2015</p>
+			<a name="ImpactWeb"><h2>Impact of the World Wide Web</h2></a>
+<p>
+Personally, I can't think of a technology that has had more of an impact on my life than the Web.  Others have already pointed out how it's taking over retail shopping, banking and financial transactions, entertainment, knowledge sharing and research, communication with others across the world and the list goes on and on. I'm thrilled to see the Web be utilized to take over industries and activities that I could live without.  Some other examples that make me excited are the TV networks being disrupted by streaming services like Netflix since I have never felt like I was getting a good value with Comcast and other large ISPs.  Crowd sourcing like kickstarter.com is powerful because customers have a more direct impact on the products and services that they want to see.  The sharing econony tools also remove the middleman and allow services to be cheaper and more sustainable.  I used Airbnb.com for the first time this year and the experience was great - I had a ski trip to Colorado and stayed in somebody's 3-bedroom condo and got a way better value than staying at a hotel. The music industry has transformed with streaming services and now you can practically find any song you've ever wanted to hear in seconds.  The idea of wikis and wikipedia is powerful since it allows the work to be "crowd sourced" out to users and older encyclopedias like Brittanica simply couldn't compete.  Of course a downside with Wikipedia is the questionability of the source and whether the information is trustworthy.  But I think most people's perception of wikipedia is wrong.  There are lots of studies and articles out there showing that wikipedia is just about as valid as any other source.  Anything written by a person has the chance to be biased or inaccurate - here's one excerpt - http://library.blogs.delaware.gov/2013/05/05/is-wikipedia-a-reliable-source/.
+</p>
+<p>
+I feel like I could go on and on about the positives of the web.  In a lot of ways it's still a very immature technology.  I think the web and networking technology is going to continue to disrupt and elevate our lives for decades to come and I'm excited to see what the future holds.
+</p>
+<p>
+The downsides of the web are things that have been mentioned already like the loss of privacy, data security, and identity theft.  I think there's also the sociological change that wireless networks with smart phones and social networks like facebook has produced.  In many ways our technology actually makes us feel less connected to eachother because we've replaced face to face and more intimate connections with facebook posts and text messages.  We post pictures of every thing we do and every meal we eat which can lead to us being less in the moment and instead replacing that with anxiety over how many likes our picture got.  We start doing things to please a crowd or to impress our social network friends. And we only get to glimpse at all of the awesome things that are happening to everybody and we don't see all of the daily stresses, setbacks, and anxieties that we all have due to the curation nature of the web and social media.  I think our health can be compromised as well since we spend so much time sitting and looking at screens.  I know I spend 8 hours a day at work sitting at my desk and then I go home and spend more hours at my home computer reading articles, playing video games, and watching streamed TV.
+</p>
+<p>
+I think the Web and the Internet has and will continue to change our lives in profound ways and most of them are positive.  But with every tool we just need to be aware of how we use it, how we legislate around it, and what we've lost in the process.  Things like web security breaches seem to be occurring more often and with higher consequences. As we continue to put more of our personal lives on the web we need to always be aware of what the consequences could be.
+</p>
+		</article>
+		
+	</div>
+		<footer>
+			<ul class="footList">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+			<ul class="footList">
+				
+				<li><a href="media.html">Media</a></li>
+				<li><a href="form.html">Contact</a></li>
+			</ul>
+			<ul class="footList">
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="techBlog.html">Tech Blog</a></li>
+			</ul>
+			<ul class="footList">
+				<li><a href="favHobbies.html">Hobbies</a></li>
+				<li><a href="favWebsites.html">Resources</a></li>
+			</ul>
+			<ul class="footList">
+				<li><a href="drawings.html">Drawings</a></li>
+				<li><a href="personalPhotos.html">Personal Photos</a></li>
+			</ul>
+			<ul class="footList" id="social">
+				<li>Follow me on: </li>
+			</ul>
+			<ul class="footList">
+				<li class="soc-links" id="facebook"><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+				<li class="soc-links" id="twitter"><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
+			</ul>
+			<ul class="footList">
+				<li class="soc-links" id="linkedin"><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+				<li class="soc-links" id="google"><a href="https://plus.google.com/" target="_blank">Google+</a></li>
+			</ul>						
+ 			<p>Copyright &copy; 2015 -- Mark Outcalt -- All Rights Reserved</p>
+		</footer>	
+	</body>
+</html>
+
